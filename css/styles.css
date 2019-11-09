@@ -13,17 +13,16 @@
     width: 100%;
 }
 
+html *
+{
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar-custom-text {
     color: black;
     margin-right: 1em;
-    font-family: 'Lato', sans-serif;
-
 }
 
-.navbar-custom-text:hover {
-    color: white;
-    background-color: rgba(103, 163, 255, 0.4);
-}
 
 
 
