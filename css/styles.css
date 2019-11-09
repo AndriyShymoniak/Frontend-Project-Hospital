@@ -1,0 +1,13 @@
+#top-navbar {
+     background-color: #1b66bb;
+ }
+
+.navbar-custom-text{
+    color: white;
+    padding: 10px;
+}
+
+.navbar-custom-text:hover{
+    color: white;
+    background-color: rgba(103,163,255,0.4);
+}
