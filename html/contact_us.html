@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My treatment history</title>
+    <!--    Icon    -->
+    <link rel="shortcut icon" type="../image/x-icon" href="../pictures/iconbig.ico">
+    <!--    Css     -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--    Bootstrap    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    Google Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--    Font awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand navbar-custom-text  my-2" href="index.html" style="margin-left: 15%"><img
+            src="../pictures/icon.png" alt=""></i>
+        Моя історія захворювань</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav md-auto" style="margin-left: 10%">
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="index.html">Головна сторінка <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="news.html">Новини <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="contact_us.html">Зв'язатись з нами <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-custom-text" href="cabinet.html"><i class="fas fa-user"></i> Особистий кабінет</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Navbar-->
+<!--Main content-->
+<div class="content">
+    <div class="row" id="main-container" style="padding-top: 15px">
+        <div class="offset-md-2 col-md-8">
+            <!-- Section: Contact v.3 -->
+            <section class="contact-section my-5">
+                <!-- Form with header -->
+                <div class="card">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-lg-8">
+                            <div class="card-body form">
+                                <!-- Header -->
+                                <h3 class="mt-4">
+                                    <i class="fas fa-envelope"></i>
+                                    Напишіть нам:
+                                </h3>
+                                <br>
+                                <!-- Grid row -->
+                                <div class="row">
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="form-contact-name" class="">Ваше ім'я</label>
+                                            <input type="text" id="form-contact-name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+                                    <!-- Grid column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="form-contact-email" class="">Електронна пошта</label>
+                                            <input type="text" id="form-contact-email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+                                    <!-- Grid column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="form-contact-phone" class="">Номер телефону</label>
+                                            <input type="text" id="form-contact-phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+                                </div>
+                                <!-- Grid row -->
+                                <div class="row">
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="form-contact-company" class="">Тема звернення</label>
+                                            <input type="text" id="form-contact-company" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+                                </div>
+                                <!-- Grid row -->
+                                <!-- Grid row -->
+                                <div class="row">
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <br>
+                                            <label for="form-contact-message">Повідомлення</label>
+                                            <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                            <br>
+                                            <div class="row">
+                                                <div class="offset-md-3 col-md-3">
+                                                    <a class="btn btn-primary" style="color: white" onclick="document.getElementById('contact-form').reset();">Надіслати</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a class="btn btn-danger" style="color: white" onclick="document.getElementById('contact-form').reset();">Скасувати</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+                                </div>
+                                <!-- Grid row -->
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-lg-4">
+                            <div class="card-body contact text-center h-100 white-text" style="padding-top: 50px; background-color: #b2cff8">
+                                <h3 class="my-4 pb-2">Контакти</h3>
+                                <ul class="text-lg-left list-unstyled ml-4">
+                                    <li>
+                                        <p>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            Львів, вул.Личаківська, 115
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fas fa-phone"></i>
+                                            +380 93 228 1337
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fas fa-envelope"></i>
+                                            mytreatmenthistory@mail.com
+                                        </p>
+                                    </li>
+                                </ul>
+                                <hr class="hr-light my-4">
+                                <ul class="list-inline text-center list-unstyled">
+                                    <li class="list-inline-item">
+                                        <a class="p-2 fa-lg tw-ic">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="p-2 fa-lg li-ic">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="p-2 fa-lg ins-ic">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <!-- Form with header -->
+            </section>
+            <!-- Section: Contact v.3 -->
+        </div>
+    </div>
+</div>
+<!--Main content-->
+
+<!--Footer-->
+<footer class="bd-footer text-muted">
+    <div class="container-fluid p-3 p-md-5 d-flex justify-content-center" id="footer-id">
+        <p>Сайт створив студент групи КН-305 Шимоняк Андрій</p>
+    </div>
+</footer>
+<!--Footer-->
+</body>
+
+
+<!--    jQuery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<!--    Popper.js   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!--    Bootstrap JS    -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--Custom-->
+
+</html>

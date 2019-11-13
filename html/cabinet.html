@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My treatment history</title>
+    <!--    Icon    -->
+    <link rel="shortcut icon" type="image/x-icon" href="../pictures/iconbig.ico">
+    <!--    Css     -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--    Bootstrap    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    Google Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--    Font awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand navbar-custom-text  my-2" href="index.html" style="margin-left: 15%"><img
+            src="../pictures/icon.png" alt=""></i>
+        Моя історія захворювань</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav md-auto" style="margin-left: 10%">
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="index.html">Головна сторінка <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="news.html">Новини <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="contact_us.html">Зв'язатись з нами <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-custom-text" href="cabinet.html"><i class="fas fa-user"></i> Особистий кабінет</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Navbar-->
+<!--Main content-->
+<div class="content">
+    <div class="row" id="main-container" style="padding-top: 50px">
+        <div class="col-md-2 offset-md-2">
+            <select class="browser-default custom-select">
+                <option selected>Пошук за</option>
+                <option value="1">Лікарем</option>
+                <option value="2">Пацієнтом</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <select class="browser-default custom-select">
+                <option selected>Сортувати за полем</option>
+                <option value="1">ID</option>
+                <option value="2">Прізвище</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <!-- Search form -->
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-light">Пошук</button>
+        </div>
+
+        <div class="col-md-10 offset-md-1">
+            <!--Table-->
+            <table class="table table-striped" style="margin-top: 0px;background-color: white">
+                <thead>
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Діагноз</th>
+                    <th scope="col">Пацієнт</th>
+                    <th scope="col">Лікар</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1489</th>
+                    <td>13:03 14.02.1988</td>
+                    <td>Чума підшлункової</td>
+                    <td>Радрігєс Я.С.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1489</th>
+                    <td>13:03 14.02.1988</td>
+                    <td>Чума підшлункової</td>
+                    <td>Радрігєс Я.С.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1489</th>
+                    <td>13:03 14.02.1988</td>
+                    <td>Чума підшлункової</td>
+                    <td>Радрігєс Я.С.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1489</th>
+                    <td>13:03 14.02.1988</td>
+                    <td>Чума підшлункової</td>
+                    <td>Радрігєс Я.С.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--Table-->
+            <!--Pagination-->
+            <div class="offset-md-4 col-md-4" style="margin-top: 40px; text-align:center;">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Попередня ст.</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Наступна ст.</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Pagination-->
+        </div>
+    </div>
+</div>
+<!--Main content-->
+<!--Footer-->
+<footer class="bd-footer text-muted">
+    <div class="container-fluid p-3 p-md-5 d-flex justify-content-center" id="footer-id">
+        <p>Сайт створив студент групи КН-305 Шимоняк Андрій</p>
+    </div>
+</footer>
+<!--Footer-->
+</body>
+
+
+<!--    jQuery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<!--    Popper.js   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!--    Bootstrap JS    -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</html>
