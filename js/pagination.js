@@ -69,7 +69,7 @@ $.fn.pageMe = function(opts){
     }
 
     function next(){
-        goToPage = parseInt(pager.data("curr")) + 1;
+        var goToPage = parseInt(pager.data("curr")) + 1;
         goTo(goToPage);
     }
 
@@ -104,6 +104,5 @@ $(document).ready(function(){
     setTimeout(()=>{
         $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
     },100)
-
 
 });
