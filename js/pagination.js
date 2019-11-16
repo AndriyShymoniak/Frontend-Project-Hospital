@@ -96,7 +96,6 @@ $.fn.pageMe = function(opts){
         pager.data("curr",page);
         pager.children().removeClass("active");
         pager.children().eq(page+1).addClass("active");
-
     }
 };
 

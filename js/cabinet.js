@@ -75,8 +75,43 @@ $(document).ready(function(){
             dataType: 'json',
             contentType: 'application/json',
             success: function (response) {
-                alert("OK");
+                var Table = document.getElementById("mainDataTable");
+                Table.innerHTML = "";
                 console.log(response);
+                $('#mainDataTable').append(
+                    `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">ПІБ</th>
+                                <th scope="col">Номер телефону</th>
+                                <th scope="col">Електронна адреса</th>
+                                <th scope="col">Спеціальність</th>
+                                <th scope="col">Дата народження</th>
+                            </tr>
+                    </thead>
+                    `
+                )
+                $.each(response, function(key, value){
+                    var date = new Date(value.birthDate);
+                    var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+                    console.log(date);
+                    console.log(formatedDate);
+                    $('#mainDataTable').append(
+                        `
+                        <tbody id="mainTableBody">
+                             <tr>
+                                <th scope="row">${value.doctorId}</th>
+                                <td>${value.lastName}</td>
+                                <td>${value.phoneNumber}</td>
+                                <td>${value.emailAddress}</td>
+                                <td>${value.speciality}</td>
+                                <td>${formatedDate}</td>
+                            </tr>
+                        </tbody>    
+                        `
+                    )
+                });
             }, error: function (error) {
                 console.log("Error: " + error)
                 if (data.status == 404) {
@@ -109,13 +144,16 @@ $(document).ready(function(){
     function showAnalogMedicineById(){
     }
 
-
+    function formatTime(time, prefix = "") {
+        return typeof time == "object" ? prefix + time.toLocaleDateString() : "";
+    }
 
 
 // ________________________________________________________________________________________________________________________
     /**
      * Для заповнення таблиці даними
      */
+
     $('#mainDataTable').append(
         `
         <thead>
