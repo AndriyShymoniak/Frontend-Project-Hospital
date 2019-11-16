@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/contatct_us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/sign_in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/sign_up.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/forContactUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/globalValues.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/pagination.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contatct_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/forContactUs.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +55,9 @@
       <workItem from="1573289818548" duration="1201000" />
       <workItem from="1573291551932" duration="18311000" />
       <workItem from="1573475299899" duration="10009000" />
-      <workItem from="1573635153090" duration="3312000" />
+      <workItem from="1573635153090" duration="4131000" />
+      <workItem from="1573641313665" duration="33000" />
+      <workItem from="1573908945244" duration="8725000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573388210861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cabinet updated">
+      <created>1573638581145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573638581145</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +111,7 @@
     <MESSAGE value="index.html updated" />
     <MESSAGE value="index.html finished" />
     <MESSAGE value="index.html text added" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html text added" />
+    <MESSAGE value="cabinet updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="cabinet updated" />
   </component>
 </project>

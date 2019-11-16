@@ -53,17 +53,32 @@
 <div class="content">
     <div class="row" id="main-container" style="padding-top: 50px">
         <div class="col-md-2 offset-md-2">
-            <select class="browser-default custom-select">
-                <option selected>Пошук за</option>
-                <option value="1">Лікарем</option>
-                <option value="2">Пацієнтом</option>
+            <select class="browser-default custom-select searchOption1">
+                <option value="" selected>Пошук за</option>
+                <option value="doctor">Лікарем</option>
+                <option value="patient">Пацієнтом</option>
+                <option value="diagnosis">Діагнозом</option>
+                <option value="medicine">Ліками</option>
             </select>
         </div>
         <div class="col-md-2">
-            <select class="browser-default custom-select">
+            <select class="browser-default custom-select searchOption2" disabled>
                 <option selected>Сортувати за полем</option>
-                <option value="1">ID</option>
-                <option value="2">Прізвище</option>
+                <!--                Doctor-->
+                <option class="doctor" value="DocShowAll">Показати всіх</option>
+                <option class="doctor" value="DocShowById">Знайти за ID</option>
+                <!--                Patient-->
+                <option class="patient" value="PatShowAll">Показати всіх</option>
+                <option class="patient" value="PatShowByLastName">Показати всіх за прізвищем</option>
+                <option class="patient" value="PatShowByDocId">Показати всіх за ID лікаря</option>
+                <option class="patient" value="PatShowById">Знайти за ID</option>
+                <!--                Diagnosis-->
+                <option class="diagnosis" value="DiagShowAll">Показати всіх</option>
+                <option class="diagnosis" value="DiagShowById">Знайти за ID</option>
+                <!--                Medicine-->
+                <option class="medicine" value="MedShowAll">Показати всіх</option>
+                <option class="medicine" value="MedShowById">Знайти за ID</option>
+                <option class="medicine" value="MedShowAnalogById">Знайти аналоги за ID</option>
             </select>
         </div>
         <div class="col-md-3">
@@ -76,85 +91,20 @@
 
         <div class="col-md-10 offset-md-1">
             <!--Table-->
-            <table class="table table-striped" style="margin-top: 0px;background-color: white">
-                <thead>
-                <tr>
-                    <th scope="col">№</th>
-                    <th scope="col">Дата</th>
-                    <th scope="col">Діагноз</th>
-                    <th scope="col">Пацієнт</th>
-                    <th scope="col">Лікар</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                </tbody>
+            <table class="table table-striped" id="mainDataTable" style="margin-top: 0px;background-color: white">
+
+
             </table>
             <!--Table-->
             <!--Pagination-->
             <div class="offset-md-4 col-md-4" style="margin-top: 40px; text-align:center;">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Попередня ст.</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Наступна ст.</a></li>
+                        <li class="page-item"><a class="page-link flex-column" href="#">Попередня ст.</a></li>
+                        <li class="page-item"><a class="page-link flex-column" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link flex-column" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link flex-column" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link flex-column" href="#">Наступна ст.</a></li>
                     </ul>
                 </nav>
             </div>
@@ -174,9 +124,7 @@
 
 
 <!--    jQuery  -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="../js/jquery.min.js"></script>
 <!--    Popper.js   -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -185,4 +133,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!--Custom JS-->
+<script src="../js/cabinet.js"></script>
+<script src="../js/globalValues.js"></script>
+<!--Pagination JS-->
+<script src="../js/pagination.min.js"></script>
 </html>
