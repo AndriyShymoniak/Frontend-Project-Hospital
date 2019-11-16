@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    var globalSearchOption1Var = '';
+    var globalSearchOption2Var = '';
+
     /**
      * Для вибору у пошуковому меню
      */
@@ -16,22 +19,100 @@ $(document).ready(function(){
         }
     });
 
-    $.ajax({
-        url: serverUrl + 'diagnosis',
-        method: 'GET',
-        dataType: 'json',
-        contentType: 'application/json',
-        success: function (response) {
-            alert("OK");
-            console.log(response);
-        }, error: function (error) {
-            console.log("Error: " + error)
-            if (data.status == 404) {
-                console.log('There is no such movie');
+// ________________________________________________________________________________________________________________________
+    /**
+     * Для діставання інфоомації з запитів сервера
+     */
+    $('#searchButton').on('click', function (e){
+        globalSearchOption1Var = $('.searchOption1').val();
+        globalSearchOption2Var = $('.searchOption2').val();
+        if (globalSearchOption1Var == '' || globalSearchOption2Var == ''){
+            alert("Помилка!");
+        } else {
+            if (globalSearchOption1Var == 'doctor'){
+                if (globalSearchOption2Var == 'DocShowAll'){
+                    showAllDoctors();
+                } else if (globalSearchOption2Var == 'DocShowById'){
+                    showDoctorById();
+                }
+            } else if (globalSearchOption1Var == 'patient'){
+                if (globalSearchOption2Var == 'PatShowAll'){
+                    showAllPatients();
+                } else if (globalSearchOption2Var == 'PatShowByLastName'){
+                    showAllPatientsByLastName();
+                } else if (globalSearchOption2Var == 'PatShowByDocId'){
+                    showAllPatientsByDoctorId();
+                } else if (globalSearchOption2Var == 'PatShowById'){
+                    showPatientById();
+                }
+            } else if (globalSearchOption1Var == 'diagnosis'){
+                if (globalSearchOption2Var == 'DiagShowAll'){
+                    showAllDiagnosis();
+                } else if (globalSearchOption2Var == 'DiagShowById'){
+                    showDiagnosisById();
+                }
+            } else if (globalSearchOption1Var == 'medicine'){
+                if (globalSearchOption2Var == 'MedShowAll'){
+                    showAllMedicine();
+                } else if (globalSearchOption2Var == 'MedShowById'){
+                    showMedicineById();
+                }
+                else if (globalSearchOption2Var == 'MedShowAnalogById'){
+                    showAnalogMedicineById();
+                }
             }
-        }
-    })
 
+        }
+
+    });
+    // alert(document.querySelector('#searchBarText').value);
+
+    // Doctor
+    function showAllDoctors(){
+        $.ajax({
+            url: serverUrl + 'doctor',
+            method: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (response) {
+                alert("OK");
+                console.log(response);
+            }, error: function (error) {
+                console.log("Error: " + error)
+                if (data.status == 404) {
+                    console.log('Error occurred');
+                }
+            }
+        })
+    }
+    function showDoctorById(){
+    }
+    // Patient
+    function showAllPatients(){
+    }
+    function showAllPatientsByLastName(){
+    }
+    function showAllPatientsByDoctorId(){
+    }
+    function showPatientById(){
+    }
+    // Diagnosis
+    function showAllDiagnosis(){
+    }
+    function showDiagnosisById(){
+    }
+    // Medicine
+    function showAllMedicine(){
+    }
+    function showMedicineById(){
+    }
+    function showAnalogMedicineById(){
+    }
+
+
+
+
+// ________________________________________________________________________________________________________________________
     /**
      * Для заповнення таблиці даними
      */
@@ -46,7 +127,21 @@ $(document).ready(function(){
                     <th scope="col">Лікар</th>
                 </tr>
         </thead>    
-        <tbody>
+        <tbody id="mainTableBody">
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
+                <tr>
+                    <th scope="row">1488</th>
+                    <td>12:03 14.02.1988</td>
+                    <td>СПІД сракі</td>
+                    <td>Жмишенко В.А.</td>
+                    <td>Мопс Д.О.</td>
+                </tr>
                 <tr>
                     <th scope="row">1488</th>
                     <td>12:03 14.02.1988</td>

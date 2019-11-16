@@ -64,18 +64,18 @@
         <div class="col-md-2">
             <select class="browser-default custom-select searchOption2" disabled>
                 <option selected>Сортувати за полем</option>
-                <!--                Doctor-->
+                <!--Doctor-->
                 <option class="doctor" value="DocShowAll">Показати всіх</option>
                 <option class="doctor" value="DocShowById">Знайти за ID</option>
-                <!--                Patient-->
+                <!--Patient-->
                 <option class="patient" value="PatShowAll">Показати всіх</option>
                 <option class="patient" value="PatShowByLastName">Показати всіх за прізвищем</option>
                 <option class="patient" value="PatShowByDocId">Показати всіх за ID лікаря</option>
                 <option class="patient" value="PatShowById">Знайти за ID</option>
-                <!--                Diagnosis-->
+                <!--Diagnosis-->
                 <option class="diagnosis" value="DiagShowAll">Показати всіх</option>
                 <option class="diagnosis" value="DiagShowById">Знайти за ID</option>
-                <!--                Medicine-->
+                <!--Medicine-->
                 <option class="medicine" value="MedShowAll">Показати всіх</option>
                 <option class="medicine" value="MedShowById">Знайти за ID</option>
                 <option class="medicine" value="MedShowAnalogById">Знайти аналоги за ID</option>
@@ -83,30 +83,31 @@
         </div>
         <div class="col-md-3">
             <!-- Search form -->
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="searchBarText">
         </div>
         <div class="col-md-1">
-            <button type="button" class="btn btn-light">Пошук</button>
+            <button type="button" class="btn btn-light" id="searchButton">Пошук</button>
         </div>
 
         <div class="col-md-10 offset-md-1">
             <!--Table-->
             <table class="table table-striped" id="mainDataTable" style="margin-top: 0px;background-color: white">
 
-
             </table>
             <!--Table-->
             <!--Pagination-->
-            <div class="offset-md-4 col-md-4" style="margin-top: 40px; text-align:center;">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link flex-column" href="#">Попередня ст.</a></li>
-                        <li class="page-item"><a class="page-link flex-column" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link flex-column" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link flex-column" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link flex-column" href="#">Наступна ст.</a></li>
-                    </ul>
-                </nav>
+            <div class="offset-md-4 col-md-4 " style="margin-top: 40px; text-align:center;">
+                <div class="d-flex align-items-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination" id="paginationPager">
+                            <li class="page-item d-flex align-items-stretch"><a class="page-link" href="#">Попередня ст.</a></li>
+                            <li class="page-item d-flex align-items-stretch"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item d-flex align-items-stretch"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item d-flex align-items-stretch"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item d-flex align-items-stretch"><a class="page-link" href="#">Наступна ст.</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <!--Pagination-->
         </div>
@@ -137,5 +138,5 @@
 <script src="../js/cabinet.js"></script>
 <script src="../js/globalValues.js"></script>
 <!--Pagination JS-->
-<script src="../js/pagination.min.js"></script>
+<script src="../js/pagination.js"></script>
 </html>
