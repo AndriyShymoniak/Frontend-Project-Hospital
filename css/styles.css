@@ -7,14 +7,13 @@
     color: black;
 }
 
-#main-container{
+#main-container {
     background-color: #008ddd;
     height: 650px;
     width: 100%;
 }
 
-html *
-{
+html * {
     font-family: 'Lato', sans-serif;
 }
 
@@ -31,7 +30,8 @@ html *
     border-width: 1px;
     border-color: #eef0f2;
 }
-.prev_link{
+
+.prev_link {
     padding: 10px;
     background-color: #ffffff;
     border-style: solid;
@@ -39,7 +39,8 @@ html *
     border-width: 1px;
     border-color: #eef0f2;
 }
-.next_link{
+
+.next_link {
     padding: 10px;
     background-color: #ffffff;
     border-style: solid;
@@ -48,5 +49,11 @@ html *
     border-color: #eef0f2;
 }
 
+#news-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #008ddd;
+}
 
 
