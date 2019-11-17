@@ -219,11 +219,61 @@ $(document).ready(function(){
             }
         })
     }
-    // TODO: доробити
     function showDiagnosisByDoctorId(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер діагнозу.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'diagnosis/docId/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForDiagnosis();
+                    $.each(response, function(key, value){
+                        fillTableBodyForDiagnosis(value);
+                    });
+                }, error: function (error) {
+                    console.log("Error: " + error)
+                    if (data.status == 404) {
+                        console.log('Error occurred');
+                    }
+                }
+            })
+        }
     }
-    // TODO: доробити
     function showDiagnosisByPatientId(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер діагнозу.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'diagnosis/patId/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForDiagnosis();
+                    $.each(response, function(key, value){
+                        fillTableBodyForDiagnosis(value);
+                    });
+                }, error: function (error) {
+                    console.log("Error: " + error)
+                    if (data.status == 404) {
+                        console.log('Error occurred');
+                    }
+                }
+            })
+        }
     }
     function showDiagnosisById(){
         if (isNaN(document.querySelector('#searchBarText').value)

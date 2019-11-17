@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pagination.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
       <workItem from="1573635153090" duration="4131000" />
       <workItem from="1573641313665" duration="33000" />
       <workItem from="1573908945244" duration="28069000" />
-      <workItem from="1573981174559" duration="4877000" />
+      <workItem from="1573981174559" duration="6096000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -123,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573930577812</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="get all and get one work fine">
+      <created>1573986608678</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573986608678</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +157,7 @@
     <MESSAGE value="pagination added, ajax added" />
     <MESSAGE value="pagination fixed" />
     <MESSAGE value="Getall doctors works fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getall doctors works fine" />
+    <MESSAGE value="get all and get one work fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="get all and get one work fine" />
   </component>
 </project>
