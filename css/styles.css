@@ -23,6 +23,30 @@ html *
     margin-right: 1em;
 }
 
+.page_link {
+    padding: 10px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-left-width: 0;
+    border-width: 1px;
+    border-color: #eef0f2;
+}
+.prev_link{
+    padding: 10px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-right-width: 0;
+    border-width: 1px;
+    border-color: #eef0f2;
+}
+.next_link{
+    padding: 10px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-left-width: 0;
+    border-width: 1px;
+    border-color: #eef0f2;
+}
 
 
 

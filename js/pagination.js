@@ -24,9 +24,10 @@ $.fn.pageMe = function(opts){
     var numPages = Math.ceil(numItems/perPage);
 
     pager.data("curr",0);
+    $('#paginationPager').empty();
 
     if (settings.showPrevNext){
-        $('<li><a href="#" class="prev_link">«</a></li>').appendTo(pager);
+        $('<li><a href="#" class="prev_link">Попередня сторінка</a></li>').appendTo(pager);
     }
 
     var curr = 0;
@@ -36,7 +37,7 @@ $.fn.pageMe = function(opts){
     }
 
     if (settings.showPrevNext){
-        $('<li><a href="#" class="next_link">»</a></li>').appendTo(pager);
+        $('<li><a href="#" class="next_link">Наступна сторінка</a></li>').appendTo(pager);
     }
 
     pager.find('.page_link:first').addClass('active');

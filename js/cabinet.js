@@ -23,6 +23,11 @@ $(document).ready(function(){
     /**
      * Для діставання інфоомації з запитів сервера
      */
+    showAllDoctors();
+    setTimeout(()=>{
+        $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
+    },200)
+
     $('#searchButton').on('click', function (e){
         globalSearchOption1Var = $('.searchOption1').val();
         globalSearchOption2Var = $('.searchOption2').val();
@@ -66,8 +71,9 @@ $(document).ready(function(){
                 }
             }
         }
-        // console.log($('#mainDataTable').attr('rows').length);
-
+        setTimeout(()=>{
+            $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
+        },200)
     });
     // alert(document.querySelector('#searchBarText').value);
 
@@ -393,7 +399,11 @@ $(document).ready(function(){
     }
     function fillTableBodyForDoctor(value){
         var date = new Date(value.birthDate);
-        var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var tempDate = date.getDate();
+        if (tempDate < 10) tempDate = '0' + tempDate;
+        var tempMonth = date.getMonth();
+        if (tempMonth < 10) tempMonth = '0' + tempMonth;
+        var formatedDate = tempDate + '/' + tempMonth + '/' + date.getFullYear();
         var initials = value.lastName + ' ' + value.firstName.toString().charAt(0) + '.' + value.middleName.toString().charAt(0) + '.';
         $('#mainDataTable').append(
             `
@@ -432,7 +442,11 @@ $(document).ready(function(){
     }
     function fillTableBodyForPatient(value){
         var date = new Date(value.birthDate);
-        var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var tempDate = date.getDate();
+        if (tempDate < 10) tempDate = '0' + tempDate;
+        var tempMonth = date.getMonth();
+        if (tempMonth < 10) tempMonth = '0' + tempMonth;
+        var formatedDate = tempDate + '/' + tempMonth + '/' + date.getFullYear();
         var initials = value.lastName + ' ' + value.firstName.toString().charAt(0) + '.' + value.middleName.toString().charAt(0) + '.';
         $('#mainDataTable').append(
             `
@@ -521,7 +535,7 @@ $(document).ready(function(){
                         </tbody>    
                         `
         )
-        $('#mainDataTable').append(
+        $('#mainTableBody').append(
             `
                          <tr>
                           <th scope="row">${value.medicineId}</th>
@@ -537,91 +551,91 @@ $(document).ready(function(){
      * Для заповнення таблиці даними
      */
 
-    $('#mainDataTable').append(
-        `
-        <thead>
-                <tr>
-                    <th scope="col">№</th>
-                    <th scope="col">Дата</th>
-                    <th scope="col">Діагноз</th>
-                    <th scope="col">Пацієнт</th>
-                    <th scope="col">Лікар</th>
-                </tr>
-        </thead>    
-        <tbody id="mainTableBody">
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1489</th>
-                    <td>13:03 14.02.1988</td>
-                    <td>Чума підшлункової</td>
-                    <td>Радрігєс Я.С.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-                <tr>
-                    <th scope="row">1488</th>
-                    <td>12:03 14.02.1988</td>
-                    <td>СПІД сракі</td>
-                    <td>Жмишенко В.А.</td>
-                    <td>Мопс Д.О.</td>
-                </tr>
-        </tbody>
-        `
-    )
+    // $('#mainDataTable').append(
+    //     `
+    //     <thead>
+    //             <tr>
+    //                 <th scope="col">№</th>
+    //                 <th scope="col">Дата</th>
+    //                 <th scope="col">Діагноз</th>
+    //                 <th scope="col">Пацієнт</th>
+    //                 <th scope="col">Лікар</th>
+    //             </tr>
+    //     </thead>
+    //     <tbody id="mainTableBody">
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1489</th>
+    //                 <td>13:03 14.02.1988</td>
+    //                 <td>Чума підшлункової</td>
+    //                 <td>Радрігєс Я.С.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1489</th>
+    //                 <td>13:03 14.02.1988</td>
+    //                 <td>Чума підшлункової</td>
+    //                 <td>Радрігєс Я.С.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1489</th>
+    //                 <td>13:03 14.02.1988</td>
+    //                 <td>Чума підшлункової</td>
+    //                 <td>Радрігєс Я.С.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1489</th>
+    //                 <td>13:03 14.02.1988</td>
+    //                 <td>Чума підшлункової</td>
+    //                 <td>Радрігєс Я.С.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //             <tr>
+    //                 <th scope="row">1488</th>
+    //                 <td>12:03 14.02.1988</td>
+    //                 <td>СПІД сракі</td>
+    //                 <td>Жмишенко В.А.</td>
+    //                 <td>Мопс Д.О.</td>
+    //             </tr>
+    //     </tbody>
+    //     `
+    // )
 
 });
 
