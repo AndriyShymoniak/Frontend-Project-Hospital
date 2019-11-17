@@ -66,6 +66,7 @@ $(document).ready(function(){
                 }
             }
         }
+        // console.log($('#mainDataTable').attr('rows').length);
 
     });
     // alert(document.querySelector('#searchBarText').value);
@@ -397,6 +398,11 @@ $(document).ready(function(){
         $('#mainDataTable').append(
             `
                         <tbody id="mainTableBody">
+                        </tbody>    
+            `
+        )
+        $('#mainTableBody').append(
+            `
                              <tr>
                                 <th scope="row">${value.doctorId}</th>
                                 <td>${initials}</td>
@@ -405,8 +411,7 @@ $(document).ready(function(){
                                 <td>${value.emailAddress}</td>
                                 <td>${formatedDate}</td>
                             </tr>
-                        </tbody>    
-                        `
+            `
         )
     }
     function fillTableHeadForPatient(){
@@ -432,16 +437,20 @@ $(document).ready(function(){
         $('#mainDataTable').append(
             `
                         <tbody id="mainTableBody">
-                             <tr>
-                                <th scope="row">${value.patientId}</th>
-                                <td>${initials}</td>
-                                <td>${value.address}</td>
-                                <td>${value.phoneNumber}</td>
-                                <td>${value.emailAddress}</td>
-                                <td>${formatedDate}</td>
-                            </tr>
                         </tbody>    
-                        `
+             `
+        )
+        $('#mainTableBody').append(
+            `
+                        <tr>
+                         <th scope="row">${value.patientId}</th>
+                         <td>${initials}</td>
+                         <td>${value.address}</td>
+                         <td>${value.phoneNumber}</td>
+                         <td>${value.emailAddress}</td>
+                         <td>${formatedDate}</td>
+                        </tr> 
+            `
         )
     }
     function fillTableHeadForDiagnosis(){
@@ -476,15 +485,19 @@ $(document).ready(function(){
         $('#mainDataTable').append(
             `
                         <tbody id="mainTableBody">
-                             <tr>
-                                <th scope="row">${value.diagnosisId}</th>
-                                <td>${value.name}</td>
-                                <td>${formatedDate}</td>
-                                <td>${patInitials}</td>
-                                <td>${docInitials}</td>
-                            </tr>
                         </tbody>    
                         `
+        )
+        $('#mainTableBody').append(
+            `
+                        <tr>
+                         <th scope="row">${value.diagnosisId}</th>
+                         <td>${value.name}</td>
+                         <td>${formatedDate}</td>
+                         <td>${patInitials}</td>
+                         <td>${docInitials}</td>
+                        </tr>  
+            `
         )
     }
     function fillTableHeadForMedicine(){
@@ -505,13 +518,17 @@ $(document).ready(function(){
         $('#mainDataTable').append(
             `
                         <tbody id="mainTableBody">
-                             <tr>
-                                <th scope="row">${value.medicineId}</th>
-                                <td>${value.name}</td>
-                                <td>${price}</td>
-                            </tr>
                         </tbody>    
                         `
+        )
+        $('#mainDataTable').append(
+            `
+                         <tr>
+                          <th scope="row">${value.medicineId}</th>
+                          <td>${value.name}</td>
+                          <td>${price}</td>
+                         </tr>
+            `
         )
     }
 
