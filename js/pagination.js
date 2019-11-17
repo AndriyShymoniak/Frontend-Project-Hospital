@@ -23,21 +23,6 @@ $.fn.pageMe = function(opts){
     var numItems = children.length;
     var numPages = Math.ceil(numItems/perPage);
 
-    // if (true){
-    //     var el = document.getElementById('#paginationPager');
-    //     var li = document.createElement('li');
-    //     li.innerHTML = "item";
-    //     el.appendChild(li);
-    // }
-    // function myCustomFunc(){
-    //     alert('HUY');
-    // }
-    // alert(numItems % perPage);
-    // while (numItems % perPage != 0){
-    //     console.log("+1");
-    //     numItems++;
-    // }
-
     pager.data("curr",0);
 
     if (settings.showPrevNext){
@@ -119,5 +104,4 @@ $(document).ready(function(){
     setTimeout(()=>{
         $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
     },100)
-
 });

@@ -40,8 +40,8 @@ $(document).ready(function(){
                     showAllPatients();
                 } else if (globalSearchOption2Var == 'PatShowByLastName'){
                     showAllPatientsByLastName();
-                } else if (globalSearchOption2Var == 'PatShowByDocId'){
-                    showAllPatientsByDoctorId();
+                // } else if (globalSearchOption2Var == 'PatShowByDocId'){
+                //     showAllPatientsByDoctorId();
                 } else if (globalSearchOption2Var == 'PatShowById'){
                     showPatientById();
                 }
@@ -65,7 +65,6 @@ $(document).ready(function(){
                     showAnalogMedicineById();
                 }
             }
-
         }
 
     });
@@ -170,8 +169,8 @@ $(document).ready(function(){
         }
     }
     // TODO: доробити
-    function showAllPatientsByDoctorId(){
-    }
+    // function showAllPatientsByDoctorId(){
+    // }
     function showPatientById(){
         if (isNaN(document.querySelector('#searchBarText').value)
             || document.querySelector('#searchBarText').value == ''
@@ -462,7 +461,16 @@ $(document).ready(function(){
     }
     function fillTableBodyForDiagnosis(value){
         var date = new Date(value.diagnosisDate);
-        var formatedDate = date.getHours()+ ', ' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var tempMinutes = date.getMinutes();
+        console.log(tempMinutes.length);
+        if (tempMinutes < 10) tempMinutes = '0' + tempMinutes;
+        var tempHours = date.getHours();
+        if (tempHours < 10) tempHours = '0' + tempHours;
+        var tempDate = date.getDate();
+        if (tempDate < 10) tempDate = '0' + tempDate;
+        var tempMonth = date.getMonth();
+        if (tempMonth < 10) tempMonth = '0' + tempMonth;
+        var formatedDate = tempHours+ ':' + tempMinutes + ', ' + tempDate + '/' + tempMonth + '/' + date.getFullYear();
         var docInitials = value.doctor.lastName + ' ' + value.doctor.firstName.toString().charAt(0) + '.' + value.doctor.middleName.toString().charAt(0) + '.';
         var patInitials = value.patient.lastName + ' ' + value.patient.firstName.toString().charAt(0) + '.' + value.patient.middleName.toString().charAt(0) + '.';;
         $('#mainDataTable').append(
@@ -598,5 +606,5 @@ $(document).ready(function(){
         `
     )
 
-})
+});
 
