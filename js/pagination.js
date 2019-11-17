@@ -23,6 +23,21 @@ $.fn.pageMe = function(opts){
     var numItems = children.length;
     var numPages = Math.ceil(numItems/perPage);
 
+    // if (true){
+    //     var el = document.getElementById('#paginationPager');
+    //     var li = document.createElement('li');
+    //     li.innerHTML = "item";
+    //     el.appendChild(li);
+    // }
+    // function myCustomFunc(){
+    //     alert('HUY');
+    // }
+    // alert(numItems % perPage);
+    // while (numItems % perPage != 0){
+    //     console.log("+1");
+    //     numItems++;
+    // }
+
     pager.data("curr",0);
 
     if (settings.showPrevNext){
@@ -72,6 +87,7 @@ $.fn.pageMe = function(opts){
         var goToPage = parseInt(pager.data("curr")) + 1;
         goTo(goToPage);
     }
+
 
     function goTo(page){
         var startAt = page * perPage,

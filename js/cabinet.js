@@ -48,6 +48,10 @@ $(document).ready(function(){
             } else if (globalSearchOption1Var == 'diagnosis'){
                 if (globalSearchOption2Var == 'DiagShowAll'){
                     showAllDiagnosis();
+                } else if (globalSearchOption2Var == 'DiagShowAllByDocId'){
+                    showDiagnosisByDoctorId();
+                } else if (globalSearchOption2Var == 'DiagShowAllByPatId'){
+                    showDiagnosisByPatientId();
                 } else if (globalSearchOption2Var == 'DiagShowById'){
                     showDiagnosisById();
                 }
@@ -67,7 +71,7 @@ $(document).ready(function(){
     });
     // alert(document.querySelector('#searchBarText').value);
 
-    // Doctor
+    /* Doctor */
     function showAllDoctors(){
         $.ajax({
             url: serverUrl + 'doctor',
@@ -78,39 +82,9 @@ $(document).ready(function(){
                 var Table = document.getElementById("mainDataTable");
                 Table.innerHTML = "";
                 console.log(response);
-                $('#mainDataTable').append(
-                    `
-                    <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">ПІБ</th>
-                                <th scope="col">Номер телефону</th>
-                                <th scope="col">Електронна адреса</th>
-                                <th scope="col">Спеціальність</th>
-                                <th scope="col">Дата народження</th>
-                            </tr>
-                    </thead>
-                    `
-                )
+                fillTableHeadForDoctor();
                 $.each(response, function(key, value){
-                    var date = new Date(value.birthDate);
-                    var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
-                    console.log(date);
-                    console.log(formatedDate);
-                    $('#mainDataTable').append(
-                        `
-                        <tbody id="mainTableBody">
-                             <tr>
-                                <th scope="row">${value.doctorId}</th>
-                                <td>${value.lastName}</td>
-                                <td>${value.phoneNumber}</td>
-                                <td>${value.emailAddress}</td>
-                                <td>${value.speciality}</td>
-                                <td>${formatedDate}</td>
-                            </tr>
-                        </tbody>    
-                        `
-                    )
+                    fillTableBodyForDoctor(value);
                 });
             }, error: function (error) {
                 console.log("Error: " + error)
@@ -121,33 +95,367 @@ $(document).ready(function(){
         })
     }
     function showDoctorById(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+                || document.querySelector('#searchBarText').value == ''
+                || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер лікаря.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'doctor/id/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForDoctor();
+                    fillTableBodyForDoctor(response);
+                }, error: function(error){
+                console.log("Error: " + error);
+                alert('Не існує лікаря з ID=' + document.querySelector('#searchBarText').value);
+                }
+            })
+        }
     }
-    // Patient
+    /* Patient */
     function showAllPatients(){
+        $.ajax({
+            url: serverUrl + 'patient',
+            method: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (response) {
+                var Table = document.getElementById("mainDataTable");
+                Table.innerHTML = "";
+                console.log(response);
+                fillTableHeadForPatient();
+                $.each(response, function(key, value){
+                    fillTableBodyForPatient(value);
+                });
+            }, error: function (error) {
+                console.log("Error: " + error)
+                if (data.status == 404) {
+                    console.log('Error occurred');
+                }
+            }
+        })
     }
     function showAllPatientsByLastName(){
+        if (!isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''){
+            alert("Помилка! Введіть прізвище пацієнта.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'patient/lastName/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    console.log(response);
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForPatient();
+                    $.each(response, function(key, value){
+                        fillTableBodyForPatient(value);
+                    });
+                }, error: function (error) {
+                    console.log("Error: " + error)
+                    if (data.status == 404) {
+                        console.log('Error occurred');
+                    }
+                }
+            })
+        }
     }
+    // TODO: доробити
     function showAllPatientsByDoctorId(){
     }
     function showPatientById(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер лікаря.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'patient/id/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForPatient();
+                    fillTableBodyForPatient(response);
+                }, error: function(error){
+                    console.log("Error: " + error);
+                    alert('Не існує лікаря з ID=' + document.querySelector('#searchBarText').value);
+                }
+            })
+        }
     }
-    // Diagnosis
+    /* Diagnosis */
     function showAllDiagnosis(){
+        $.ajax({
+            url: serverUrl + 'diagnosis',
+            method: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (response) {
+                var Table = document.getElementById("mainDataTable");
+                Table.innerHTML = "";
+                console.log(response);
+                fillTableHeadForDiagnosis();
+                $.each(response, function(key, value){
+                    fillTableBodyForDiagnosis(value);
+                });
+            }, error: function (error) {
+                console.log("Error: " + error)
+                if (data.status == 404) {
+                    console.log('Error occurred');
+                }
+            }
+        })
+    }
+    // TODO: доробити
+    function showDiagnosisByDoctorId(){
+    }
+    // TODO: доробити
+    function showDiagnosisByPatientId(){
     }
     function showDiagnosisById(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер діагнозу.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'diagnosis/id/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForDiagnosis();
+                    fillTableBodyForDiagnosis(response);
+                }, error: function(error){
+                    console.log("Error: " + error);
+                    alert('Не існує діагнозу з ID=' + document.querySelector('#searchBarText').value);
+                }
+            })
+        }
     }
-    // Medicine
+    /* Medicine */
     function showAllMedicine(){
+        $.ajax({
+            url: serverUrl + 'medicine',
+            method: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (response) {
+                var Table = document.getElementById("mainDataTable");
+                Table.innerHTML = "";
+                console.log(response);
+                fillTableHeadForMedicine();
+                $.each(response, function(key, value){
+                    fillTableBodyForMedicine(value);
+                });
+            }, error: function (error) {
+                console.log("Error: " + error)
+                if (data.status == 404) {
+                    console.log('Error occurred');
+                }
+            }
+        })
     }
     function showMedicineById(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер ліків.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'medicine/id/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForMedicine();
+                    fillTableBodyForMedicine(response);
+                }, error: function(error){
+                    console.log("Error: " + error);
+                    alert('Не існує ліків з ID=' + document.querySelector('#searchBarText').value);
+                }
+            })
+        }
     }
     function showAnalogMedicineById(){
+        if (isNaN(document.querySelector('#searchBarText').value)
+            || document.querySelector('#searchBarText').value == ''
+            || document.querySelector('#searchBarText').value <= 0){
+            alert("Помилка! Введіть ID номер ліків.")
+        } else {
+            $.ajax({
+                url: serverUrl + 'medicine/analogId/' + document.querySelector('#searchBarText').value,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForMedicine();
+                    $.each(response, function(key, value){
+                        fillTableBodyForMedicine(value);
+                    });
+                }, error: function (error) {
+                    console.log("Error: " + error)
+                    if (data.status == 404) {
+                        console.log('Error occurred');
+                    }
+                }
+            })
+        }
     }
 
-    function formatTime(time, prefix = "") {
-        return typeof time == "object" ? prefix + time.toLocaleDateString() : "";
+    function fillTableHeadForDoctor(){
+        $('#mainDataTable').append(
+            `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">ПІБ</th>
+                                <th scope="col">Спеціальність</th>
+                                <th scope="col">Номер телефону</th>
+                                <th scope="col">Електронна адреса</th>
+                                <th scope="col">Дата народження</th>
+                            </tr>
+                    </thead>
+                    `
+        )
     }
-
+    function fillTableBodyForDoctor(value){
+        var date = new Date(value.birthDate);
+        var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var initials = value.lastName + ' ' + value.firstName.toString().charAt(0) + '.' + value.middleName.toString().charAt(0) + '.';
+        $('#mainDataTable').append(
+            `
+                        <tbody id="mainTableBody">
+                             <tr>
+                                <th scope="row">${value.doctorId}</th>
+                                <td>${initials}</td>
+                                <td>${value.speciality}</td>
+                                <td>${value.phoneNumber}</td>
+                                <td>${value.emailAddress}</td>
+                                <td>${formatedDate}</td>
+                            </tr>
+                        </tbody>    
+                        `
+        )
+    }
+    function fillTableHeadForPatient(){
+        $('#mainDataTable').append(
+            `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">ПІБ</th>
+                                <th scope="col">Адреса</th>
+                                <th scope="col">Номер телефону</th>
+                                <th scope="col">Електронна адреса</th>
+                                <th scope="col">Дата народження</th>
+                            </tr>
+                    </thead>
+                    `
+        )
+    }
+    function fillTableBodyForPatient(value){
+        var date = new Date(value.birthDate);
+        var formatedDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var initials = value.lastName + ' ' + value.firstName.toString().charAt(0) + '.' + value.middleName.toString().charAt(0) + '.';
+        $('#mainDataTable').append(
+            `
+                        <tbody id="mainTableBody">
+                             <tr>
+                                <th scope="row">${value.patientId}</th>
+                                <td>${initials}</td>
+                                <td>${value.address}</td>
+                                <td>${value.phoneNumber}</td>
+                                <td>${value.emailAddress}</td>
+                                <td>${formatedDate}</td>
+                            </tr>
+                        </tbody>    
+                        `
+        )
+    }
+    function fillTableHeadForDiagnosis(){
+        $('#mainDataTable').append(
+            `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Діагноз</th>
+                                <th scope="col">Дата(год, день/міс/рік)</th>
+                                <th scope="col">Пацієнт</th>
+                                <th scope="col">Лікар</th>
+                            </tr>
+                    </thead>
+                    `
+        )
+    }
+    function fillTableBodyForDiagnosis(value){
+        var date = new Date(value.diagnosisDate);
+        var formatedDate = date.getHours()+ ', ' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+        var docInitials = value.doctor.lastName + ' ' + value.doctor.firstName.toString().charAt(0) + '.' + value.doctor.middleName.toString().charAt(0) + '.';
+        var patInitials = value.patient.lastName + ' ' + value.patient.firstName.toString().charAt(0) + '.' + value.patient.middleName.toString().charAt(0) + '.';;
+        $('#mainDataTable').append(
+            `
+                        <tbody id="mainTableBody">
+                             <tr>
+                                <th scope="row">${value.diagnosisId}</th>
+                                <td>${value.name}</td>
+                                <td>${formatedDate}</td>
+                                <td>${patInitials}</td>
+                                <td>${docInitials}</td>
+                            </tr>
+                        </tbody>    
+                        `
+        )
+    }
+    function fillTableHeadForMedicine(){
+        $('#mainDataTable').append(
+            `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Назва</th>
+                                <th scope="col">Ціна</th>
+                            </tr>
+                    </thead>
+                    `
+        )
+    }
+    function fillTableBodyForMedicine(value){
+        var price = value.price + " грн";
+        $('#mainDataTable').append(
+            `
+                        <tbody id="mainTableBody">
+                             <tr>
+                                <th scope="row">${value.medicineId}</th>
+                                <td>${value.name}</td>
+                                <td>${price}</td>
+                            </tr>
+                        </tbody>    
+                        `
+        )
+    }
 
 // ________________________________________________________________________________________________________________________
     /**
