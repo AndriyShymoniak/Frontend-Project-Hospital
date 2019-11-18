@@ -53,6 +53,9 @@ $(document).ready(function(){
             } else if (globalSearchOption1Var == 'diagnosis'){
                 if (globalSearchOption2Var == 'DiagShowAll'){
                     showAllDiagnosis();
+                    setTimeout(()=>{
+                        $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
+                    },2000)
                 } else if (globalSearchOption2Var == 'DiagShowAllByDocId'){
                     showDiagnosisByDoctorId();
                 } else if (globalSearchOption2Var == 'DiagShowAllByPatId'){
@@ -71,6 +74,7 @@ $(document).ready(function(){
                 }
             }
         }
+
         setTimeout(()=>{
             $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
         },200)

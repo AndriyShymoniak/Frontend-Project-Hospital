@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pagination.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,8 @@
       <workItem from="1573908945244" duration="28069000" />
       <workItem from="1573981174559" duration="25291000" />
       <workItem from="1574057699786" duration="807000" />
-      <workItem from="1574077266916" duration="1102000" />
+      <workItem from="1574077266916" duration="3548000" />
+      <workItem from="1574083748622" duration="844000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574030277440</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="show patient by surname fixed">
+      <created>1574079601733</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574079601733</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +218,7 @@
     <MESSAGE value="sign in/up added" />
     <MESSAGE value="pagination works fine" />
     <MESSAGE value="news page filled" />
-    <option name="LAST_COMMIT_MESSAGE" value="news page filled" />
+    <MESSAGE value="show patient by surname fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="show patient by surname fixed" />
   </component>
 </project>

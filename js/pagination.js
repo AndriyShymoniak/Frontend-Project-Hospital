@@ -27,7 +27,7 @@ $.fn.pageMe = function(opts){
     $('#paginationPager').empty();
 
     if (settings.showPrevNext){
-        $('<li><a href="#" class="prev_link">Попередня сторінка</a></li>').appendTo(pager);
+        $('<li><a href="#" class="prev_link">Попередня ст.</a></li>').appendTo(pager);
     }
 
     var curr = 0;
@@ -37,7 +37,7 @@ $.fn.pageMe = function(opts){
     }
 
     if (settings.showPrevNext){
-        $('<li><a href="#" class="next_link">Наступна сторінка</a></li>').appendTo(pager);
+        $('<li><a href="#" class="next_link">Наступна ст.</a></li>').appendTo(pager);
     }
 
     pager.find('.page_link:first').addClass('active');
@@ -101,8 +101,8 @@ $.fn.pageMe = function(opts){
     }
 };
 
-$(document).ready(function(){
-    setTimeout(()=>{
-        $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
-    },100)
-});
+// $(document).ready(function(){
+//     setTimeout(()=>{
+//         $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
+//     },300)
+// });
