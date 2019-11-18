@@ -220,6 +220,7 @@
                     var tempDate = date.getDate();
                     if (tempDate < 10) tempDate = '0' + tempDate;
                     var tempMonth = date.getMonth();
+                    if (tempMonth < 10) tempMonth = '0' + tempMonth;
                     var formatedDate = tempDate + '/' + tempMonth + '/' + date.getFullYear();
                     var fullname = response.lastName + ' ' + response.firstName + ' ' + response.middleName;
                     if (tempMonth < 10) tempMonth = '0' + tempMonth;
