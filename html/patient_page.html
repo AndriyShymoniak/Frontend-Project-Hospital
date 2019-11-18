@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My treatment history</title>
+    <!--    Icon    -->
+    <link rel="shortcut icon" type="image/x-icon" href="../pictures/iconbig.ico">
+    <!--    Css     -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/individual_page.css">
+    <!--    Bootstrap    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    Google Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--    Font awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand navbar-custom-text  my-2" href="index.html" style="margin-left: 15%"><img
+            src="../pictures/icon.png" alt=""></i>
+        Моя історія захворювань</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav md-auto" style="margin-left: 10%">
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="index.html">Головна сторінка <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="news.html">Новини <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link navbar-custom-text" href="contact_us.html">Зв'язатись з нами <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-custom-text" href="cabinet.html"><i class="fas fa-user"></i> Особистий кабінет</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-custom-text" href="sign_in.html">Увійти</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Navbar-->
+
+<!--Main content-->
+<div id="news-content">
+    <div class="row" style="width: 100%;">
+        <div class="col-md-8 offset-md-2" style="background-color: white">
+            <div class="row">
+                <!--Full name-->
+                <div class="col-md-6 offset-md-3" ><h2 id="singlePageFullName" style="text-align: center; padding: 20px"></h2></div>
+                <div class="col-md-3"></div>
+                <!--Full name-->
+                <!--Email-->
+                <div class="offset-md-1 col-md-3">
+                    <p>Електронна пошта:</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="singlePageEmail"></p>
+                </div>
+                <div class="col-md-5"></div>
+                <!--Email-->
+                <!--Phone number-->
+                <div class="offset-md-1 col-md-3">
+                    <p>Номер телефону:</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="singlePagePhoneNumber"></p>
+                </div>
+                <div class="col-md-5"></div>
+                <!--Phone number-->
+                <!--Address-->
+                <div class="offset-md-1 col-md-3">
+                    <p>Адреса: </p>
+                </div>
+                <div class="col-md-3">
+                    <p id="singlePageAddress"></p>
+                </div>
+                <div class="col-md-5"></div>
+                <!--Address-->
+                <!--Birth date-->
+                <div class="offset-md-1 col-md-3">
+                    <p>Дата народженя</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="singlePageBirthDate"></p>
+                </div>
+                <div class="col-md-5"></div>
+                <!--Birth date-->
+
+                <div class="col-md-4 offset-md-4">
+                    <p style="text-align: center; margin-top: 30px">Ваша історія захворювань:</p>
+                </div>
+                <!--Table-->
+                <table class="table table-striped" id="mainDataTable" style="margin-top: 0px;background-color: white">
+                </table>
+                <!--Table-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--Main content-->
+
+<!--Footer-->
+<footer class="bd-footer text-muted">
+    <div class="container-fluid p-3 p-md-5 d-flex justify-content-center" id="footer-id">
+        <p>Сайт створив студент групи КН-305 Шимоняк Андрій</p>
+    </div>
+</footer>
+<!--Footer-->
+</body>
+
+
+<!--    jQuery  -->
+<script src="../js/jquery.min.js"></script>
+<!--    Popper.js   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!--    Bootstrap JS    -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--Custom JS-->
+<script src="../js/globalValues.js"></script>
+<script>
+    $(document).ready(function () {
+        showDiagnosisByPatientId();
+        fillAllPageFields();
+
+        function showDiagnosisByPatientId() {
+            $.ajax({
+                url: serverUrl + 'diagnosis/patId/' + 4,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var Table = document.getElementById("mainDataTable");
+                    Table.innerHTML = "";
+                    console.log(response);
+                    fillTableHeadForDiagnosis();
+                    $.each(response, function (key, value) {
+                        fillTableBodyForDiagnosis(value);
+                    });
+                }, error: function (error) {
+                    console.log("Error: " + error)
+                    if (data.status == 404) {
+                        console.log('Error occurred');
+                    }
+                }
+            })
+        }
+        function fillTableHeadForDiagnosis(){
+            $('#mainDataTable').append(
+                `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Діагноз</th>
+                                <th scope="col">Дата(год, день/міс/рік)</th>
+                                <th scope="col">Пацієнт</th>
+                                <th scope="col">Лікар</th>
+                            </tr>
+                    </thead>
+                    `
+            )
+        }
+        function fillTableBodyForDiagnosis(value){
+            var date = new Date(value.diagnosisDate);
+            var tempMinutes = date.getMinutes();
+            console.log(tempMinutes.length);
+            if (tempMinutes < 10) tempMinutes = '0' + tempMinutes;
+            var tempHours = date.getHours();
+            if (tempHours < 10) tempHours = '0' + tempHours;
+            var tempDate = date.getDate();
+            if (tempDate < 10) tempDate = '0' + tempDate;
+            var tempMonth = date.getMonth();
+            if (tempMonth < 10) tempMonth = '0' + tempMonth;
+            var formatedDate = tempHours+ ':' + tempMinutes + ', ' + tempDate + '/' + tempMonth + '/' + date.getFullYear();
+            var docInitials = value.doctor.lastName + ' ' + value.doctor.firstName.toString().charAt(0) + '.' + value.doctor.middleName.toString().charAt(0) + '.';
+            var patInitials = value.patient.lastName + ' ' + value.patient.firstName.toString().charAt(0) + '.' + value.patient.middleName.toString().charAt(0) + '.';;
+            $('#mainDataTable').append(
+                `
+                        <tbody id="mainTableBody">
+                        </tbody>
+                        `
+            )
+            $('#mainTableBody').append(
+                `
+                        <tr>
+                         <th scope="row">${value.diagnosisId}</th>
+                         <td>${value.name}</td>
+                         <td>${formatedDate}</td>
+                         <td>${patInitials}</td>
+                         <td>${docInitials}</td>
+                        </tr>
+            `
+            )
+        }
+        function fillAllPageFields() {
+            $.ajax({
+                url: serverUrl + 'patient/id/' + 4,
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (response) {
+                    var date = new Date(response.birthDate);
+                    var tempDate = date.getDate();
+                    if (tempDate < 10) tempDate = '0' + tempDate;
+                    var tempMonth = date.getMonth();
+                    var formatedDate = tempDate + '/' + tempMonth + '/' + date.getFullYear();
+                    var fullname = response.lastName + ' ' + response.firstName + ' ' + response.middleName;
+                    if (tempMonth < 10) tempMonth = '0' + tempMonth;
+                    $('#singlePageFullName').append(fullname);
+                    $('#singlePageEmail').append(response.emailAddress);
+                    $('#singlePagePhoneNumber').append(response.phoneNumber);
+                    $('#singlePageAddress').append(response.address);
+                    $('#singlePageBirthDate').append(formatedDate);
+                }, error: function(error){
+                    console.log("Error: " + error);
+                    alert('Не існує лікаря з ID=' + document.querySelector('#searchBarText').value);
+                }
+            })
+        }
+    })
+</script>
+</html>
