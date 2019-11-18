@@ -153,11 +153,13 @@ $(document).ready(function(){
             alert("Помилка! Введіть прізвище пацієнта.")
         } else {
             $.ajax({
-                url: serverUrl + 'patient/lastName/' + document.querySelector('#searchBarText').value,
+                url: serverUrl + 'patient/lastName/' +  encodeURIComponent(document.querySelector('#searchBarText').value),
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',
                 success: function (response) {
+                    console.log(encodeURIComponent(document.querySelector('#searchBarText').value));
+                    console.log(serverUrl + 'patient/lastName/' + document.querySelector('#searchBarText').value);
                     console.log(response);
                     var Table = document.getElementById("mainDataTable");
                     Table.innerHTML = "";
