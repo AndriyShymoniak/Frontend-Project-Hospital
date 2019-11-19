@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/diagnosis_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/admin_medicine_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/admin_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/admin_patient_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/individual_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/individual_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/doctor_page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       <workItem from="1574057699786" duration="807000" />
       <workItem from="1574077266916" duration="3548000" />
       <workItem from="1574083748622" duration="13270000" />
-      <workItem from="1574103724253" duration="6448000" />
+      <workItem from="1574103724253" duration="19258000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574094227965</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="diagnosis single page added">
+      <created>1574155984525</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155984525</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +253,7 @@
     <MESSAGE value="pagination finally works fine" />
     <MESSAGE value="patient single page added" />
     <MESSAGE value="doctors single page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="doctors single page added" />
+    <MESSAGE value="diagnosis single page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="diagnosis single page added" />
   </component>
 </project>
