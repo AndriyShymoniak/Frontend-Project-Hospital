@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/diagnosis_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/diagnosis_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/doctor_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/patient_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/globalValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/globalValues.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
       <workItem from="1574077266916" duration="3548000" />
       <workItem from="1574083748622" duration="13270000" />
       <workItem from="1574103724253" duration="24232000" />
-      <workItem from="1574180590612" duration="6060000" />
+      <workItem from="1574180590612" duration="6407000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -256,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574183251064</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="table references added">
+      <created>1574187867938</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1574187867938</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +282,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="index.html finished" />
     <MESSAGE value="index.html text added" />
     <MESSAGE value="cabinet updated" />
     <MESSAGE value="server connected to html" />
@@ -302,6 +306,7 @@
     <MESSAGE value="admin page for medicine added" />
     <MESSAGE value="navbar changed" />
     <MESSAGE value="index text changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="index text changed" />
+    <MESSAGE value="table references added" />
+    <option name="LAST_COMMIT_MESSAGE" value="table references added" />
   </component>
 </project>

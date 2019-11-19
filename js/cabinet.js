@@ -55,7 +55,7 @@ $(document).ready(function(){
                     showAllDiagnosis();
                     setTimeout(()=>{
                         $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
-                    },2000)
+                    },4000)
                 } else if (globalSearchOption2Var == 'DiagShowAllByDocId'){
                     showDiagnosisByDoctorId();
                 } else if (globalSearchOption2Var == 'DiagShowAllByPatId'){
