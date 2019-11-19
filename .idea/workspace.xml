@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_patient_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/diagnosis_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/diagnosis_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/doctor_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/patient_page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +68,7 @@
       <workItem from="1574077266916" duration="3548000" />
       <workItem from="1574083748622" duration="13270000" />
       <workItem from="1574103724253" duration="24232000" />
-      <workItem from="1574180590612" duration="1379000" />
+      <workItem from="1574180590612" duration="2463000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -247,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574179453808</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="navbar changed">
+      <created>1574182054728</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574182054728</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +290,7 @@
     <MESSAGE value="jquery changed" />
     <MESSAGE value="admin page for patient added" />
     <MESSAGE value="admin page for medicine added" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin page for medicine added" />
+    <MESSAGE value="navbar changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar changed" />
   </component>
 </project>
