@@ -144,12 +144,13 @@
 <script src="../js/globalValues.js"></script>
 <script>
     $(document).ready(function () {
-        showDiagnosisByPatientId();
-        fillAllPageFields();
+        var id = getUrlVars()["patient_id"];
+        showDiagnosisByPatientId(id);
+        fillAllPageFields(id);
 
-        function showDiagnosisByPatientId() {
+        function showDiagnosisByPatientId(id) {
             $.ajax({
-                url: serverUrl + 'diagnosis/patId/' + 4,
+                url: serverUrl + 'diagnosis/patId/' + id,
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',
@@ -208,17 +209,23 @@
                 `
                         <tr>
                          <th scope="row">${value.diagnosisId}</th>
-                         <td>${value.name}</td>
+                         <td>
+                             <a href="diagnosis_page.html?diagnosis_id=${value.diagnosisId}">${value.name}</a>
+                         </td>
                          <td>${formatedDate}</td>
-                         <td>${patInitials}</td>
-                         <td>${docInitials}</td>
+                         <td>
+                           <a href="patient_page.html?patient_id=${value.patient.patientId}">${patInitials}</a>
+                          </td>
+                          <td>
+                            <a href="doctor_page.html?doctor_id=${value.doctorId}">${docInitials}</a>
+                          </td>
                         </tr>
             `
             )
         }
-        function fillAllPageFields() {
+        function fillAllPageFields(id) {
             $.ajax({
-                url: serverUrl + 'patient/id/' + 4,
+                url: serverUrl + 'patient/id/' + id,
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',

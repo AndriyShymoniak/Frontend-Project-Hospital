@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../pictures/iconbig.ico">
     <!--    Css     -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/individual_page.css">
     <!--    Bootstrap    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -144,12 +145,15 @@
 <script src="../js/globalValues.js"></script>
 <script>
     $(document).ready(function () {
-        showDiagnosisByDoctorId();
-        fillAllPageFields();
+        var id = getUrlVars()["doctor_id"];
 
-        function showDiagnosisByDoctorId() {
+        showDiagnosisByDoctorId(id);
+        fillAllPageFields(id);
+
+
+        function showDiagnosisByDoctorId(id) {
             $.ajax({
-                url: serverUrl + 'diagnosis/docId/' + 12,
+                url: serverUrl + 'diagnosis/docId/' + id,
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',
@@ -208,17 +212,23 @@
                 `
                         <tr>
                          <th scope="row">${value.diagnosisId}</th>
-                         <td>${value.name}</td>
+                         <td>
+                            <a href="diagnosis_page.html?diagnosis_id=${value.diagnosisId}">${value.name}</a>
+                          </td>
                          <td>${formatedDate}</td>
-                         <td>${patInitials}</td>
-                         <td>${docInitials}</td>
+                         <td>
+                           <a href="patient_page.html?patient_id=${value.patient.patientId}">${patInitials}</a>
+                          </td>
+                          <td>
+                            <a href="doctor_page.html?doctor_id=${value.doctorId}">${docInitials}</a>
+                          </td>
                         </tr>
             `
             )
         }
-        function fillAllPageFields() {
+        function fillAllPageFields(id) {
             $.ajax({
-                url: serverUrl + 'doctor/id/' + 12,
+                url: serverUrl + 'doctor/id/' + id,
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',

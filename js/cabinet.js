@@ -421,7 +421,9 @@ $(document).ready(function(){
             `
                              <tr>
                                 <th scope="row">${value.doctorId}</th>
-                                <td>${initials}</td>
+                                <td>
+                                    <a href="doctor_page.html?doctor_id=${value.doctorId}">${initials}</a>
+                                </td>
                                 <td>${value.speciality}</td>
                                 <td>${value.phoneNumber}</td>
                                 <td>${value.emailAddress}</td>
@@ -464,7 +466,9 @@ $(document).ready(function(){
             `
                         <tr>
                          <th scope="row">${value.patientId}</th>
-                         <td>${initials}</td>
+                         <td>
+                           <a href="patient_page.html?patient_id=${value.patientId}">${initials}</a>
+                          </td>
                          <td>${value.address}</td>
                          <td>${value.phoneNumber}</td>
                          <td>${value.emailAddress}</td>
@@ -512,7 +516,9 @@ $(document).ready(function(){
             `
                         <tr>
                          <th scope="row">${value.diagnosisId}</th>
-                         <td>${value.name}</td>
+                         <td>
+                          <a href="diagnosis_page.html?diagnosis_id=${value.diagnosisId}">${value.name}</a>
+                          </td>
                          <td>${formatedDate}</td>
                          <td>${patInitials}</td>
                          <td>${docInitials}</td>

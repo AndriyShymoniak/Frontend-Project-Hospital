@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../pictures/iconbig.ico">
     <!--    Css     -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/individual_page.css">
     <!--    Bootstrap    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -164,11 +165,13 @@
 <script src="../js/globalValues.js"></script>
 <script>
     $(document).ready(function () {
-        fillAllPageFields();
+        var id = getUrlVars()["diagnosis_id"];
 
-        function fillAllPageFields() {
+        fillAllPageFields(id);
+
+        function fillAllPageFields(id) {
             $.ajax({
-                url: serverUrl + 'diagnosis/id/' + 5,
+                url: serverUrl + 'diagnosis/id/' + id,
                 method: 'GET',
                 dataType: 'json',
                 contentType: 'application/json',
