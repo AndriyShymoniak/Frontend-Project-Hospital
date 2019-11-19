@@ -269,9 +269,7 @@
                         console.log('Error happened');
                     }
                     if (data.status == 201) {
-                        // $('#addMovieForm')[0].reset();
-                        // $('#moviesTable tbody').empty();
-                        // getMovies();
+                        $('#addNewDoctorForm')[0].reset();
                         alert("Лікаря додано!");
                     }
                 }
@@ -285,7 +283,9 @@
                 url: serverUrl + 'doctor/delete/' + doctorId,
                 type: 'DELETE',
                 success: function(data){
+                    $('#deleteDoctorForm')[0].reset();
                     console.log("OK");
+                    alert("Лікаря з ID=" + doctorId + ' видалено');
                 }, error: function(data){
                     console.log("Error: " + data);
                 }

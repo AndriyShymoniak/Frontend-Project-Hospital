@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_patient_page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +68,7 @@
       <workItem from="1574057699786" duration="807000" />
       <workItem from="1574077266916" duration="3548000" />
       <workItem from="1574083748622" duration="13270000" />
-      <workItem from="1574103724253" duration="19455000" />
+      <workItem from="1574103724253" duration="21214000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -221,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574175274666</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="jquery changed">
+      <created>1574175360973</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1574175360973</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +266,7 @@
     <MESSAGE value="doctors single page added" />
     <MESSAGE value="diagnosis single page added" />
     <MESSAGE value="admin page for doctor added" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin page for doctor added" />
+    <MESSAGE value="jquery changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery changed" />
   </component>
 </project>
