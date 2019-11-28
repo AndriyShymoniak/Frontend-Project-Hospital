@@ -15,12 +15,22 @@ $(document).ready(function (e){
         window.storage = {};
         window.storage.reqTypeVar = reqType;
         // alert(window.storage.reqTypeVar);
-        getContent();
         rightsCheck();
+        changeLoginIfLogged();
     } else {
         rightsCheck();
+        changeLoginIfUnlogged();
     }
 })
+
+$(document).ready(function(){
+    $('#loginLink').on('click', function(){
+        window.localStorage.removeItem('auth_token');
+        window.localStorage.removeItem('auth_role');
+        $(location).attr('href', 'index.html');
+    })
+})
+
 
 function include(url) {
     var script = document.createElement('script');
@@ -48,4 +58,12 @@ function rightsCheck(){
             alert('Залогуйтесь, щоб зайти в особистий кабінет!');
         }, false);
     }
+}
+
+function changeLoginIfLogged() {
+    $('#loginLink').text("Вийти");
+}
+
+function changeLoginIfUnlogged() {
+    $('#loginLink').text("Увійти");
 }
