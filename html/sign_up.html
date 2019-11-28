@@ -24,7 +24,7 @@
 <div class="row">
     <div class="offset-md-4 col-md-4">
         <!-- Default form register -->
-        <form class="text-center border border-light p-5" action="#!">
+        <form id="registerForm" class="text-center border border-light p-5" action="#!">
 
             <p class="h4 mb-4">Реєстрація нового пацієнта</p>
 
@@ -88,4 +88,50 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!--Custom JS-->
+<script src="../js/globalValues.js"></script>
+
+<script>
+    $(document).ready(function () {
+        
+        $('#registerForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const firstName = $('#defaultRegisterFormFirstName').val();
+            const middleName = $('#defaultRegisterFormMidName').val();
+            const lastName = $('#defaultRegisterFormLastName').val();
+            const emailAddress = $('#defaultRegisterFormEmail').val();
+            const password = $('#defaultRegisterFormPassword').val();
+            const phoneNumber = $('#defaultRegisterPhoneNumber').val();
+
+            const user = {
+                firstName : firstName,
+                middleName : middleName,
+                lastName : lastName,
+                emailAddress : emailAddress,
+                password : password,
+                phoneNumber : phoneNumber
+            }
+
+            console.log(user);
+            $.ajax({
+                url: serverUrl + 'auth/signup',
+                method: 'POST',
+                data: JSON.stringify(user),
+                contentType: 'application/json',
+                complete: function(data){
+                    if(data.status == 500){
+                        console.log('Error');
+                    }
+
+                    if(data.status == 201){
+                        $(location).attr('href', 'sign_in.html');
+                    }
+                }
+            })
+
+        })
+
+    })
+</script>
 </html>

@@ -2,16 +2,267 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/pdfConverter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/RELEASE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/SUMMARY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/dist/jspdf.debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/dist/jspdf.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/files.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/plugins/from_html.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/FontObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/PubSub.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/_global_.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/jsPDF-PubSub.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/jsPDF-jsPDF.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/jsPDF.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/jsPDFClass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/src/c__work_jsPDF_jspdf.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/src/c__work_jsPDF_tools_jspdf.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/doc/symbols/src/jspdf.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/docs/getting_started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/annotation/test_annotation-magFactor.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/annotation/test_annotation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/annotation/test_annotation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/annotation/test_annotation_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/css/bootstrap-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/canvg_context2d/bar_graph_with_text_and_lines.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/context2d/test_context2d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/context2d/test_context2d_paths.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/css/smoothness/jquery-ui-1.8.17.custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/downloadify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/auto_break.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/examples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/lists.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/page_break.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/pdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/pdf2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/showcase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/showcase_supported_html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/html2pdf/total_mess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/24_bit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/32_bit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/RGBA_16bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/RGB_16bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/grayscale_16bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/grayscale_8bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/grayscale_alpha_16_bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/grayscale_alpha_8bpc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/png8_flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/png8_trans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/images/tiny_png_indexed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/jaxer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/AcroForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/autoprint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/circles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/font-faces.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/font-size.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/from-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/html2canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/images_png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/jquery/jquery-1.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/jquery/jquery-ui-1.8.17.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/kitchen-sink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/landscape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/lines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/rectangles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/string-splitting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/test_harness.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/text-colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/theme-ambiance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/triangles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/two-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/js/user-input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/jspdf.PLUGINTEMPLATE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/null-logo-trans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/octocat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/octocat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/outline/test_outline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/outline/test_outline.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/runner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/test_from_html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/test_from_html_css_page_breaks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/test_insert_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/examples/thinking-monkey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/jspdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/README.textile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/images/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/js/downloadify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/js/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/media/downloadify.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/src/Downloadify.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/src/com/dynamicflash/util/Base64.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/src/com/dynamicflash/util/tests/Base64Test.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/src/downloadify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/Downloadify/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/canvg_context2d/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/canvg_context2d/canvg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/canvg_context2d/libs/StackBlur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/canvg_context2d/libs/rgbcolor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/css_colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/deflate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/dist/html2canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/clone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/dummyimagecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/fallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/font.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/fontmetrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/framecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/gradientcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/imagecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/imageloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/lineargradientcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/nodecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/nodeparser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/proxyimagecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/pseudoelementcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/renderers/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/stackingcontext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/svgcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/svgnodecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/textcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/webkitgradientcontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2canvas/src/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/html2pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/png_support/png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/png_support/zlib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/polyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/require/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/libs/require/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/npm-shrinkwrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/acroform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/addhtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/addimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/autoprint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/cell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/context2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/from_html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/outline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/png_support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/prevent_scale_to_fit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/split_text_to_size.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/standard_fonts_metrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/total_pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/plugins/xmp_metadata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/001_blankpdf.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/002_twopagedoc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/002_twopagedoc_oldapi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/003_demolandscape.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/004_fontsizes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/005_demofonttypes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/006_demotestcolors.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/007_demometadata.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/008_demorectangles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/009_demoliness.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/010_democircles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/011_multilinetext.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/012_multiplelines.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/013_sillysvgrenderer.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/013_sillysvgrenderer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/014_addImage.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/014_addImage.jpeg.base64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/014_addImage.pdf.base64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/014_addImage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/015_splittext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/015_splittext.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/components_tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/libs/curl-0.5.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/libs/custom_fill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/libs/qunit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/libs/qunit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/pdf_generate_tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/test_from_html_css_page_breaks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/test_harness.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/test/test_min.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsPDF-1.3.2/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_medicine_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_medicine_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_patient_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/diagnosis_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/diagnosis_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/doctor_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/patient_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/individual_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sign_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/globalValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/globalValues.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +321,13 @@
       <workItem from="1574077266916" duration="3548000" />
       <workItem from="1574083748622" duration="13270000" />
       <workItem from="1574103724253" duration="24232000" />
-      <workItem from="1574180590612" duration="6407000" />
+      <workItem from="1574180590612" duration="7833000" />
+      <workItem from="1574277351104" duration="331000" />
+      <workItem from="1574634257513" duration="1467000" />
+      <workItem from="1574669911279" duration="5263000" />
+      <workItem from="1574691920391" duration="461000" />
+      <workItem from="1574765108204" duration="4403000" />
+      <workItem from="1574918351050" duration="2577000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -261,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574187867938</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="minor fix">
+      <created>1574188179232</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1574188179232</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="index.html text added" />
     <MESSAGE value="cabinet updated" />
     <MESSAGE value="server connected to html" />
     <MESSAGE value="pagination added, ajax added" />
@@ -307,6 +570,7 @@
     <MESSAGE value="navbar changed" />
     <MESSAGE value="index text changed" />
     <MESSAGE value="table references added" />
-    <option name="LAST_COMMIT_MESSAGE" value="table references added" />
+    <MESSAGE value="minor fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fix" />
   </component>
 </project>

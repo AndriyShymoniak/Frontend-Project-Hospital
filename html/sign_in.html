@@ -24,15 +24,15 @@
 <div class="row">
     <div class="offset-md-4 col-md-4">
         <!-- Default form login -->
-        <form class="text-center border border-light p-5" action="#!">
+        <form id="signinForm" class="text-center border border-light p-5" action="#!">
 
             <p class="h4 mb-4">Увійти</p>
 
             <!-- Email -->
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Електронна пошта">
+            <input type="email" id="signinLogin" class="form-control mb-4" placeholder="Електронна пошта">
 
             <!-- Password -->
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Пароль">
+            <input type="password" id="signinPassword" class="form-control mb-4" placeholder="Пароль">
 
             <div class="d-flex justify-content-around">
                 <div>
@@ -75,4 +75,40 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!--Custom JS-->
+<script src="../js/globalValues.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#signinForm').on('submit', function (e) {
+            e.preventDefault();
+
+            let loginData = {
+                username: $('#signinLogin').val(),
+                password: $('#signinPassword').val()
+            };
+
+            $.ajax({
+                url: serverUrl + 'auth/signin',
+                method: 'POST',
+                data: JSON.stringify(loginData),
+                contentType: 'application/json',
+                complete: function(data) {
+                    console.log(data);
+
+                    if(data.status == 200) {
+                        window.localStorage.setItem('auth_token', data.responseJSON.token);
+                        window.localStorage.setItem('auth_role', data.responseJSON.role);
+                        $(location).attr('href', 'index.html');
+                    } else {
+                        alert("You entered wrong password, please try again")
+                    }
+                }
+            })
+
+        })
+
+    })
+</script>
 </html>
