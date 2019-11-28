@@ -38,8 +38,8 @@
                 <div>
                     <!-- Remember me -->
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                        <label class="custom-control-label" for="defaultLoginFormRemember">Запамятати мене на цьому пристрої</label>
+                        <input  type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Увійти як лікар</label>
                     </div>
                 </div>
                 <div>
@@ -84,29 +84,55 @@
         $('#signinForm').on('submit', function (e) {
             e.preventDefault();
 
+            const isdoctor = document.getElementById('defaultLoginFormRemember') ;
+
             let loginData = {
                 username: $('#signinLogin').val(),
                 password: $('#signinPassword').val()
             };
 
-            $.ajax({
-                url: serverUrl + 'auth/signin',
-                method: 'POST',
-                data: JSON.stringify(loginData),
-                contentType: 'application/json',
-                complete: function(data) {
-                    console.log(data);
+            if (loginData.username != "" && loginData.password != ""){
+                if (isdoctor.checked){      // sign in for doctor
+                    $.ajax({
+                        url: serverUrl + 'auth/signin/doctor',
+                        method: 'POST',
+                        data: JSON.stringify(loginData),
+                        contentType: 'application/json',
+                        complete: function(data) {
+                            console.log(data);
 
-                    if(data.status == 200) {
-                        window.localStorage.setItem('auth_token', data.responseJSON.token);
-                        window.localStorage.setItem('auth_role', data.responseJSON.role);
-                        $(location).attr('href', 'index.html');
-                    } else {
-                        alert("You entered wrong password, please try again")
-                    }
+                            if(data.status == 200) {
+                                window.localStorage.setItem('auth_token', data.responseJSON.token);
+                                window.localStorage.setItem('auth_role', data.responseJSON.role);
+                                $(location).attr('href', 'index.html');
+                            } else {
+                                alert("You entered wrong password, please try again")
+                            }
+                        }
+                    })
+                } else {      // sign in for patient
+                    $.ajax({
+                        url: serverUrl + 'auth/signin',
+                        method: 'POST',
+                        data: JSON.stringify(loginData),
+                        contentType: 'application/json',
+                        complete: function(data) {
+                            console.log(data);
+
+                            if(data.status == 200) {
+                                window.localStorage.setItem('auth_token', data.responseJSON.token);
+                                window.localStorage.setItem('auth_role', data.responseJSON.role);
+                                $(location).attr('href', 'index.html');
+                            } else {
+                                alert("You entered wrong password, please try again")
+                            }
+                        }
+                    })
                 }
-            })
 
+            } else {
+                alert("Заповніть усі поля");
+            }
         })
 
     })
