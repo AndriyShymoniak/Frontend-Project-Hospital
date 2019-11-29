@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="sing in/sign up changes on click">
+    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/individual_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/individual_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/globalValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/globalValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_medicine_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_medicine_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_patient_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_patient_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/diagnosis_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/diagnosis_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/doctor_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/individual_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/patient_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +93,7 @@
       <workItem from="1574691920391" duration="461000" />
       <workItem from="1574765108204" duration="4403000" />
       <workItem from="1574918351050" duration="12007000" />
-      <workItem from="1575023207213" duration="810000" />
+      <workItem from="1575023207213" duration="1499000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -306,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574925862075</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="minor changes + patient page error occured">
+      <created>1575024041025</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575024041025</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +340,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pagination fixed" />
     <MESSAGE value="Getall doctors works fine" />
     <MESSAGE value="get all and get one work fine" />
     <MESSAGE value="2 search methods added" />
@@ -352,6 +364,7 @@
     <MESSAGE value="rights check added" />
     <MESSAGE value="sign in finally works" />
     <MESSAGE value="sing in/sign up changes on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="sing in/sign up changes on click" />
+    <MESSAGE value="minor changes + patient page error occured" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes + patient page error occured" />
   </component>
 </project>
