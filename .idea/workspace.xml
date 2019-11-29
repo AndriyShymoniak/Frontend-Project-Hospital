@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
+    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="bea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_medicine_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_medicine_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/pdfConverter.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/pdfConverter.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
       <workItem from="1574691920391" duration="461000" />
       <workItem from="1574765108204" duration="4403000" />
       <workItem from="1574918351050" duration="12007000" />
-      <workItem from="1575023207213" duration="10857000" />
+      <workItem from="1575023207213" duration="11087000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575043931870</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="link to printing page added">
+      <created>1575044011107</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1575044011107</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +352,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2 search methods added" />
     <MESSAGE value="diagnosis date fixed" />
     <MESSAGE value="tbody fixed" />
     <MESSAGE value="sign in/up added" />
@@ -371,6 +376,7 @@
     <MESSAGE value="minor changes + patient page error occured" />
     <MESSAGE value="login button id added" />
     <MESSAGE value="JSPDF data printing added" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSPDF data printing added" />
+    <MESSAGE value="link to printing page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="link to printing page added" />
   </component>
 </project>
