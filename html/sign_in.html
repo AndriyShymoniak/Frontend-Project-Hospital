@@ -104,6 +104,7 @@
                             if(data.status == 200) {
                                 window.localStorage.setItem('auth_token', data.responseJSON.token);
                                 window.localStorage.setItem('auth_role', data.responseJSON.role);
+                                window.localStorage.setItem('auth_id', data.responseJSON.id);
                                 $(location).attr('href', 'index.html');
                             } else {
                                 alert("You entered wrong password, please try again")
@@ -122,6 +123,7 @@
                             if(data.status == 200) {
                                 window.localStorage.setItem('auth_token', data.responseJSON.token);
                                 window.localStorage.setItem('auth_role', data.responseJSON.role);
+                                window.localStorage.setItem('auth_id', data.responseJSON.id);
                                 $(location).attr('href', 'index.html');
                             } else {
                                 alert("You entered wrong password, please try again")
