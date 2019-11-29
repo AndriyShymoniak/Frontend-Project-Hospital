@@ -26,7 +26,7 @@
     <div class="row" style="width: 100%;">
         <!--Vertical navigation-->
         <div class="col-md-2 admin-nav-page">
-            <h5 style="text-align: center; margin: 30px; color: white"><b>Сторінка адміна</b></h5>
+            <h5 style="text-align: center; margin: 30px; color: white" onclick="location.href='admin_page.html';"><b>Сторінка адміна</b></h5>
             <div style="margin-top: 20px">
                 <button class="btn custom-menu-btn" type="button" id="dropdownDoc" style="width: 100%;" aria-expanded="false" onclick="location.href='admin_doctor_page.html';">
                     Дії з лікарем
@@ -36,6 +36,9 @@
                 </button>
                 <button class="btn custom-menu-btn" type="button" id="dropdownMed" style="width: 100%;" aria-expanded="false" onclick="location.href='admin_medicine_page.html';">
                     Дії з ліками
+                </button>
+                <button class="btn custom-menu-btn" type="button" id="dropdownPrint" style="width: 100%;" aria-expanded="false" onclick="location.href='pdfConverter.html';">
+                    Друкування даних
                 </button>
             </div>
         </div>

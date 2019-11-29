@@ -5,20 +5,138 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My treatment history</title>
+    <!--    Icon    -->
+    <link rel="shortcut icon" type="../image/x-icon" href="../pictures/iconbig.ico">
+    <!--    Css     -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/individual_page.css">
+    <!--    Bootstrap    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--    Google Fonts    -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--    Font awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-<div id="content">
-    <h1>
-        We support special element handlers. Register them with jQuery-style.
-    </h1>
-    <button type="button" onclick="convert()">Click Me!</button>
+
+<div class="content" style="width: 100%">
+    <div class="row" style="width: 100%;">
+        <!--Vertical navigation-->
+        <div class="col-md-2 admin-nav-page">
+            <h5 style="text-align: center; margin: 30px; color: white" onclick="location.href='admin_page.html';"><b>Сторінка адміна</b></h5>
+            <div style="margin-top: 20px">
+                <button class="btn custom-menu-btn" type="button" id="dropdownDoc" style="width: 100%;" aria-expanded="false" onclick="location.href='admin_doctor_page.html';">
+                    Дії з лікарем
+                </button>
+                <button class="btn custom-menu-btn" type="button" id="dropdownPat" style="width: 100%;" aria-expanded="false"onclick="location.href='admin_patient_page.html';">
+                    Дії з пацієнтом
+                </button>
+                <button class="btn custom-menu-btn" type="button" id="dropdownMed" style="width: 100%;" aria-expanded="false" onclick="location.href='admin_medicine_page.html';">
+                    Дії з ліками
+                </button>
+                <button class="btn custom-menu-btn" type="button" id="dropdownPrint" style="width: 100%;" aria-expanded="false" onclick="location.href='pdfConverter.html';">
+                    Друкування даних
+                </button>
+            </div>
+        </div>
+        <!--Vertical navigation-->
+        <!--Main content-->
+        <div class="col-md-10">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand navbar-custom-text  my-2" href="index.html" ><img
+                        src="../pictures/icon.png" alt=""></i>
+                    Моя історія захворювань</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav md-auto" style="margin-left: 10%">
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-custom-text" href="index.html">Головна сторінка <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-custom-text" href="news.html">Новини <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-custom-text" href="contact_us.html">Зв'язатись з нами <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbar-custom-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Переглянути історію лікування
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                <a class="dropdown-item " style="text-align: left" href="cabinet.html"><i class="fas fa-book-medical"></i> Архів</a>
+                                <a id="individualPageLink" class="dropdown-item" style="text-align: left" href="patient_page.html"><i class="fas fa-user"></i> Особистий кабінет</a>
+                                <div class="dropdown-divider"></div>
+                                <a id="adminPageLink" class="dropdown-item" style="text-align: left" href="admin_page.html"><i class="fas fa-user-shield"></i> Сторінка адміна</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="loginLink" class="nav-link navbar-custom-text" href="sign_in.html">Увійти</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Navbar-->
+            <!--Main inner content-->
+            <div style=" background-color: #f6f7fa; width: 100%; padding: 10px;">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-md-4" style="text-align: right; margin-top: 20px">
+                                <label>Починаючи з: </label>
+                            </div>
+                            <div class="col-md-6" style="margin-top: 20px">
+                                <input type="date" class="form-control" id="patInputDateFrom">
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4" style="text-align: right; margin-top: 20px">
+                                <label>Закінчуюючи : </label>
+                            </div>
+                            <div class="col-md-6" style="margin-top: 20px">
+                                <input type="date" class="form-control" id="patInputDateTo">
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        <div class="row" style="margin-top: 10px">
+                            <div class="col-md-2 offset-md-5">
+                                <button type="submit" class="btn btn-success" onclick="convert()">Завантажити</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="capture">
+                            <h4>Список діагнозів</h4>
+                            <table class="table table-striped" id="mainDataTable"
+                                   style="margin-top: 0px;background-color: white"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main inner content-->
+            <!--Footer-->
+            <footer class="bd-footer text-muted">
+                <div class="container-fluid p-3 p-md-5 d-flex justify-content-center" id="footer-id">
+                    <p>Сайт створив студент групи КН-305 Шимоняк Андрій</p>
+                </div>
+            </footer>
+            <!--Footer-->
+        </div>
+        <!--Main content-->
+    </div>
 </div>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+<!--    Canvas  -->
+<script src="../js/canvas.min.js"></script>
+<!--    JS PDF  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.1/jspdf.debug.js"></script>
 <!--    jQuery  -->
 <script src="../js/jquery.min.js"></script>
 <!--    Popper.js   -->
@@ -29,28 +147,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<!--Custom JS-->
-<script src="../js/cabinet.js"></script>
-<script src="../js/globalValues.js"></script>
 <script>
-    var doc = new jsPDF();
+    const serverUrl = 'http://localhost:8080/';
 
     function convert() {
-        console.log(showAllDiagnosis());
-        var diagnosisDataArr = showAllDiagnosis();
-        doc.setFontSize(20);
-        doc.setFontType('normal');
-        doc.text('Hello world!');
-        diagnosisDataArr.forEach(
-            diagnosis => doc.text(diagnosis.toString())
-        )
-        doc.save('diagnosisData.pdf')
-
+        showAllDiagnosis();
+        setTimeout(()=>{
+            // Step 1: Convert the A4 DOM into svg
+            // Step 2: Convert svg to png
+            // Step 3: Convert png to pdf
+            window.scrollTo(0,0);
+            html2canvas(document.getElementById('capture'))
+                .then((canvas) => {
+                    const imgData = canvas.toDataURL('image/png');
+                    const pdf = new jsPDF();
+                    pdf.addImage(imgData, 'PNG', 0, 0);
+                    pdf.save("download.pdf");
+                });
+            ;
+        },1000)
     }
+
 
     function showAllDiagnosis(){
         $.ajax({
-            url: serverUrl + 'diagnosis',
+            url: serverUrl + 'diagnosis/dateFrom/'+ $('#patInputDateFrom').val() + '/dateTo/' + $('#patInputDateTo').val(),
             method: 'GET',
             dataType: 'json',
             contentType: 'application/json',
@@ -69,6 +190,55 @@
                 }
             }
         })
+    }
+    function fillTableHeadForDiagnosis(){
+        $('#mainDataTable').append(
+            `
+                    <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Діагноз</th>
+                                <th scope="col">Дата(год, день/міс/рік)</th>
+                                <th scope="col">Пацієнт</th>
+                                <th scope="col">Лікар</th>
+                            </tr>
+                    </thead>
+                    `
+        )
+    }
+    function fillTableBodyForDiagnosis(value){
+        var date = new Date(value.diagnosisDate);
+        var tempMinutes = date.getMinutes();
+        console.log(tempMinutes.length);
+        if (tempMinutes < 10) tempMinutes = '0' + tempMinutes;
+        var tempHours = date.getHours();
+        if (tempHours < 10) tempHours = '0' + tempHours;
+        var tempDate = date.getDate();
+        if (tempDate < 10) tempDate = '0' + tempDate;
+        var tempMonth = date.getMonth();
+        if (tempMonth < 10) tempMonth = '0' + tempMonth;
+        var formatedDate = tempHours+ ':' + tempMinutes + ', ' + tempDate + '/' + tempMonth + '/' + date.getFullYear();
+        var docInitials = value.doctor.lastName + ' ' + value.doctor.firstName.toString().charAt(0) + '.' + value.doctor.middleName.toString().charAt(0) + '.';
+        var patInitials = value.patient.lastName + ' ' + value.patient.firstName.toString().charAt(0) + '.' + value.patient.middleName.toString().charAt(0) + '.';;
+        $('#mainDataTable').append(
+            `
+                        <tbody id="mainTableBody">
+                        </tbody>
+                        `
+        )
+        $('#mainTableBody').append(
+            `
+                        <tr>
+                         <th scope="row">${value.diagnosisId}</th>
+                         <td>
+                          <a href="diagnosis_page.html?diagnosis_id=${value.diagnosisId}">${value.name}</a>
+                          </td>
+                         <td>${formatedDate}</td>
+                         <td>${patInitials}</td>
+                         <td>${docInitials}</td>
+                        </tr>
+            `
+        )
     }
 
 </script>
