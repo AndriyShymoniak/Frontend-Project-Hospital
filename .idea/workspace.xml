@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="bea">
+    <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/pdfConverter.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/pdfConverter.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1574691920391" duration="461000" />
       <workItem from="1574765108204" duration="4403000" />
       <workItem from="1574918351050" duration="12007000" />
-      <workItem from="1575023207213" duration="11087000" />
+      <workItem from="1575023207213" duration="11922000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -331,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575044011107</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="beautify">
+      <created>1575044226731</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1575044226731</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +360,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="diagnosis date fixed" />
     <MESSAGE value="tbody fixed" />
     <MESSAGE value="sign in/up added" />
     <MESSAGE value="pagination works fine" />
@@ -377,6 +384,7 @@
     <MESSAGE value="login button id added" />
     <MESSAGE value="JSPDF data printing added" />
     <MESSAGE value="link to printing page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="link to printing page added" />
+    <MESSAGE value="beautify" />
+    <option name="LAST_COMMIT_MESSAGE" value="beautify" />
   </component>
 </project>
