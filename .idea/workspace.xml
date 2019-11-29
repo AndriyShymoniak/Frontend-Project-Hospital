@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9e20e7b-b31a-4a7f-9f20-bca2f19a62f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/admin_doctor_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/admin_doctor_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/pdfConverter.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/pdfConverter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cabinet.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
       <workItem from="1574691920391" duration="461000" />
       <workItem from="1574765108204" duration="4403000" />
       <workItem from="1574918351050" duration="12007000" />
-      <workItem from="1575023207213" duration="11922000" />
+      <workItem from="1575023207213" duration="13881000" />
     </task>
     <task id="LOCAL-00001" summary="index.html updated">
       <created>1573335424787</created>
@@ -339,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575044226731</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="bugs fixed">
+      <created>1575045096745</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1575045096745</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +366,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tbody fixed" />
     <MESSAGE value="sign in/up added" />
     <MESSAGE value="pagination works fine" />
     <MESSAGE value="news page filled" />
@@ -385,6 +390,7 @@
     <MESSAGE value="JSPDF data printing added" />
     <MESSAGE value="link to printing page added" />
     <MESSAGE value="beautify" />
-    <option name="LAST_COMMIT_MESSAGE" value="beautify" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
 </project>

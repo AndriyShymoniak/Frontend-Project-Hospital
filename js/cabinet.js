@@ -66,6 +66,9 @@ $(document).ready(function(){
             } else if (globalSearchOption1Var == 'medicine'){
                 if (globalSearchOption2Var == 'MedShowAll'){
                     showAllMedicine();
+                    setTimeout(()=>{
+                        $('#mainTableBody').pageMe({pagerSelector:'#paginationPager',showPrevNext:true,hidePageNumbers:false,perPage:8});
+                    },3000)
                 } else if (globalSearchOption2Var == 'MedShowById'){
                     showMedicineById();
                 }
